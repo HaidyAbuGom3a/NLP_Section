@@ -24,5 +24,8 @@ text = "Hello, today i went home early. I feel very happy. I want to go to New Y
 tokenized_text = tokenize_text(text, option)
 mwe_list = [('New', 'York')]
 mwe_tokenizer = MWETokenizer(mwe_list)
-tokenized_text = mwe_tokenizer.tokenize(tokenized_text)
-print(tokenized_text)
+new_tokenized_text = mwe_tokenizer.tokenize(tokenized_text)
+if(option == 1):
+    print(new_tokenized_text)
+else:
+    print(tokenized_text)
